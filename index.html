@@ -7,6 +7,8 @@
     <title>Portfolio_Alex</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./card/style.css">
+
 </head>
 <body>
 
@@ -18,9 +20,9 @@
                                 <a href="index.html" class="logo">DeOrbegoso</a>
                                 <nav>
                                     <ul>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Projects</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a class = "nav-item" href="#sectionOne">About</a></li>
+                                        <li><a class = "nav-item" href="#sectionTwo">Projects</a></li>
+                                        <li><a class = "nav-item" href="#sectionThree">Contact</a></li>
                                     </ul>
                                 </nav>
                             </header>
@@ -37,7 +39,7 @@
                     <div class="content">
                         <h1>Hello World! My name is Alex.</h1>
                         <div class="meet">
-                            <p>Craftsmanship work for web-development.</p><a href="#">Check out.</a>
+                            <p>Craftsmanship work for web-development.</p><a href="#sectionTwo">Check out.</a>
                         </div>
 
                     </div>
@@ -45,7 +47,7 @@
                 
     </div>
 
-<section class="about-section">
+<section class="about-section" id = "sectionOne">
     <img class = "left transition" src="images/programming-593312_1280.jpg" alt="laptop with code">
     <div class="inner transition">
          <h1 class="about-title"></h1>
@@ -56,31 +58,46 @@
 
 </section>
 
-<section class="project-section">
+<section class="project-section" id = "sectionTwo">
     <div class="project-container">
          <ul>
-            <li class = "transition2">
-                <p class="project-title">Frontend Development</p>
-                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nostrum!</p>
-            
-        
+            <li class = "transition2" id="project-one">
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">Something Awesome</h2>
+                        <p class="card-body">Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit. Aliquid modi 
+                            fuga in perspiciatis debitis doloremque, 
+                            incidunt, nobis qui officia quaerat.</p>
+                            <a href="https://twitter.com/" class="button">Demo</a>
+                    </div>
             </li>
-            <li class = "transition2">
-                <p class="project-title">Business Project</p>
-                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nostrum!</p>
-            
-        
+            <li class = "transition2" id="project-two">
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">Something Awesome</h2>
+                        <p class="card-body">Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit. Aliquid modi 
+                            fuga in perspiciatis debitis doloremque, 
+                            incidunt, nobis qui officia quaerat.</p>
+                            <a href="#" class="button">Demo</a>
+                    </div>
             </li>
-            <li class = "transition2">
-                <p class="project-title">Javascript Games</p>
-                <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nostrum!</p>
-            
-        
+            <li class = "transition2" id="project-three">
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">Something Awesome</h2>
+                        <p class="card-body">Lorem ipsum dolor sit amet, 
+                            consectetur adipisicing elit. Aliquid modi 
+                            fuga in perspiciatis debitis doloremque, 
+                            incidunt, nobis qui officia quaerat.</p>
+                            <a href="#" class="button">Demo</a>
+                    </div>
             </li>
     </ul>     
     </div>
 </section>
-<section class="contact-section">
+<section class="contact-section" id = "sectionThree">
     <h1>Contact</h1>
     <div class="section-container">
         <div class="contact-info">
