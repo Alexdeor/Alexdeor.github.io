@@ -130,7 +130,22 @@ font-size: .9em;
 line-height: 1.8em;
 font-weight: 500;
 } 
+.nav-item:hover,
+.nav-item:focus,
+.social-header > ul > li>i{
+    background-color: #674867;
+    transition: 500ms ease;
 
+
+}
+.social-header > ul > li> a >i:hover{
+    color: #674867;
+}
+.meet > a:hover{
+    color: #674867;
+    border-color: #674867;
+    transition: 100ms ease;
+}
 
 .contact-info p{
     border-bottom: solid 1px #e2d8d83c;
@@ -197,15 +212,15 @@ h1{
 }
 .project-container{
     ul li{
-        background-color: white;
+        border:  solid 1px #674867;
+
         padding: 2em;
         border-radius: 1em;
         margin-bottom: 1em;
-
-        
-
     }
 }
+
+
 
 @media only screen and (min-width: 800px){
     
@@ -241,7 +256,9 @@ h1{
    .nav-container{
     display: grid;
     grid-template-columns: 66% auto;
-   }
+    
+}
+
  header{
     padding: 2em 2em 2em 4em;
    }

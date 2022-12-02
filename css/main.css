@@ -122,6 +122,23 @@ section {
   font-weight: 500;
 }
 
+.nav-item:hover,
+.nav-item:focus,
+.social-header > ul > li > i {
+  background-color: #674867;
+  transition: 500ms ease;
+}
+
+.social-header > ul > li > a > i:hover {
+  color: #674867;
+}
+
+.meet > a:hover {
+  color: #674867;
+  border-color: #674867;
+  transition: 100ms ease;
+}
+
 .contact-info p {
   border-bottom: solid 1px rgba(226, 216, 216, 0.2352941176);
 }
@@ -181,7 +198,7 @@ section {
 }
 
 .project-container ul li {
-  background-color: white;
+  border: solid 1px #674867;
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
