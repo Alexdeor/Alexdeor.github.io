@@ -60,7 +60,7 @@ header{
     color: white;
     display: grid;
     text-align: left;
-    padding: 8em 4em;
+    padding: 5em 0em 0em 3em;
     position: relative;
     h1{
         width: 80%;
@@ -74,6 +74,10 @@ header{
         padding:  .5em;
         border: solid 2px white;
     }
+}
+.about-desc{
+    text-align: start;
+    padding: .5em;
 }
 .social-header2 {
     display: grid;
@@ -138,7 +142,10 @@ font-weight: 500;
 
 
 }
-.social-header > ul > li> a >i:hover{
+.nav-item, .logo{
+    font-size: .75em;
+}
+.ocial-header > ul > li> a >i:hover{
     color: #674867;
 }
 .meet > a:hover{
@@ -228,6 +235,12 @@ h1{
         display: grid;
         grid-template-columns: 40% auto;
     }
+    .about-desc{
+     
+            text-align: start;
+            padding: .5em .5em .5em 4em;
+        
+    }
     .contact-form{
         padding: 2vw 4vw;
     }
@@ -292,9 +305,31 @@ section{
     .social-header{
         padding: 2em 10em 2em 0;
     }
+    .nav-item, .logo{
+        font-size: 1em;
+    }
  
 }
 @media only screen and (min-width: 1550px){
+    .main-page{
+        color: white;
+        display: grid;
+        text-align: left;
+        padding: 8em 4em;
+        position: relative;
+        h1{
+            width: 80%;
+        border-bottom: solid 3px #674867;
+    
+        }
+       p{
+        padding-bottom: 1em;
+       }
+        a{
+            padding:  .5em;
+            border: solid 2px white;
+        }
+    }
     header{
         padding: 2em 2em 2em 20em;
     }

@@ -4,11 +4,34 @@
   box-sizing: border-box;
 }
 
-.card {
+.card-one {
   color: white;
   background-image: url(/images/mobile-design.jpg);
   background-size: cover;
   padding: 10rem 0 0;
+  font-weight: bold;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-two {
+  color: white;
+  background-image: url(/images/mobile-design-dark.jpg);
+  background-size: cover;
+  padding: 10rem 0 0;
+  font-weight: bold;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-three {
+  color: white;
+  background-image: url(/images/desktop-design.jpg);
+  background-size: cover;
+  padding: 10rem 0 0;
+  font-weight: bold;
   max-width: 35ch;
   border-radius: 0.5rem;
   overflow: hidden;
