@@ -4,42 +4,54 @@
     box-sizing: border-box;
 }
 
+.card{
+    width: 100%;
+    height: 100% ;
+}
+
+
 
 .card-one{
     color: white;
-    background-image: url(/images/mobile-design.jpg);
+    background-image: url(/images/Screenshot\ 2023-03-03\ 193142.png);
     background-size: cover;
     padding: 10rem 0 0;
     font-weight: bold;
-    max-width: 35ch;
     border-radius: 0.5rem;
     overflow: hidden;
+    
 
 }
 .card-two{
     color: white;
-    background-image: url(/images/mobile-design-dark.jpg);
+    background-image: url(/images/Screenshot\ 2023-03-04\ 214418.png);
     background-size: cover;
     padding: 10rem 0 0;
     font-weight: bold;
-    max-width: 35ch;
     border-radius: 0.5rem;
     overflow: hidden;
+    background-position: center ;
+
+    background-repeat: no-repeat;
 
 }
 .card-three{
     color: white;
-    background-image: url(/images/desktop-design.jpg);
-    background-size: cover;
+    background-image: url(/images/Screenshot\ 2023-03-05\ 012503.png);
+    background-size:cover;
+    width: 100%;
+    background-position: center ;
+
+    background-repeat: no-repeat;
     padding: 10rem 0 0;
     font-weight: bold;
-    max-width: 35ch;
     border-radius: 0.5rem;
     overflow: hidden;
 
 }
 .card-content{
     --padding:1.5rem;
+    height: 100%;
     padding: var(--padding);
     background:linear-gradient(
     hsl(0 0% 0% / 0),    
@@ -80,10 +92,8 @@
 @media only screen and (min-width: 1200px){
     .card{
         color: white;
-        background-image: url(/images/mobile-design.jpg);
         background-size: cover;
         padding: 10rem 0 0;
-        max-width: 35ch;
         border-radius: 0.5rem;
         overflow: hidden;
     

@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');body{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+*{
+    scroll-behavior: smooth;
+
+}
+body{
     margin: 0;
     font-family: 'Roboto Mono', monospace;
 }
+
 ul{
     list-style: none;
     margin: 0;
@@ -23,7 +29,11 @@ img{
 
 }
 
-
+#sectionThree{
+    display: grid;
+    padding:20em 5em 25em  5em;
+    align-content: center;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -220,10 +230,7 @@ h1{
 .project-container{
     ul li{
         border:  solid 1px #674867;
-
-        padding: 2em;
-        border-radius: 1em;
-        margin-bottom: 1em;
+        padding: 1em;
     }
 }
 
@@ -243,6 +250,7 @@ h1{
     }
     .contact-form{
         padding: 2vw 4vw;
+        margin: 1em;
     }
     .social-header{
         position: relative;
@@ -311,6 +319,7 @@ section{
  
 }
 @media only screen and (min-width: 1550px){
+
     .main-page{
         color: white;
         display: grid;

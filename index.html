@@ -66,9 +66,9 @@
             <li class = "transition2" id="project-one">
                 <div class="card-one card">
                     <div class="card-content">
-                        <h2 class="card-title">QR-Code</h2>
-                        <p class="card-body">I developed a simple QR-code-component design, using basic HTML and CSS.</p>
-                            <a target = "_blank" href="https://alexdeor.github.io/QR-code-component/" class="button">Demo</a>
+                        <h2 class="card-title">Store Page</h2>
+                        <p class="card-body">I developed a simple store page design, using basic HTML, CSS, and bootstrap.</p>
+                            <a target = "_blank" href="https://alexdeor.github.io/Store-page/" class="button" onclick="document.location.reload()">Demo</a>
                     </div>
             </li>
             <li class = "transition2" id="project-two">
@@ -76,8 +76,8 @@
                     <div class="card-content">
                         <h2 class="card-title">To-do-list</h2>
                         <p class="card-body">I developed a To-do-list with a toggle to switch the background color from dark to light. For this project, I used basic HTML, CSS, and Javasctipt. </p>
-                            <a target ="_blank" href="https://alexdeor.github.io/todo-list/
-                            " class="button">Demo</a>
+                            <a target ="_blank" href="todo-list/todo.html"
+                            onclick="document.location.reload()" class="button">Demo</a>
                     </div>
             </li>
             <li class = "transition2" id="project-three">
@@ -85,7 +85,7 @@
                     <div class="card-content">
                         <h2 class="card-title">Landing-page</h2>
                         <p class="card-body">I developed a agency landing page, to demonstrate some of the basics of HTML and CSS and the basics of web-development.</p>
-                            <a target = "_blank" href="https://alexdeor.github.io/landing-page/" class="button">Demo</a>
+                            <a target = "_blank" href="sunnnyside/sunny.html" onclick="document.location.reload()" class="button">Demo</a>
                     </div>
             </li>
     </ul>     
@@ -100,32 +100,37 @@
         <h2>Phone</h2>
         <p>(832) 359-8921</p>
     </div>
-        <div class="contact-form" action = "https://formsubmit.co/deorbegoso.alexander@outlook.com" method = "POST" onsubmit="sendEmail(); reset(); return false;">
+        <div class="contact-form">
         <input type="text" id = "name" placeholder="Your Name" required>
         <input type="email" id = "email" placeholder="Email " required>
         <textarea id="message" rows="4" placeholder = "Message..."></textarea>
-        <button type="submit">Send</button>
+        <button id = "btn"type="submit">Send</button>
     
         </div>
 </div>
 </section>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 <script>
-    function sendEmail(){
-        Email.send({
-            Host : "smtp.outlook.com",
-            Username : "deorbegoso.alexander@outlook.com",
-            Password : "password",
-            To : 'deorbegoso.alexander@outlook.com',
-            Subject : "New Contact Form Enquiry",
-            Body : "Name: " + document.getElementById("name").value +
-             "<br> Email: " + document.getElementById("email").value +
-             "<br> Message: " + document.getElementById("message").value 
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', function(e){
+        e.preventDefault()
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
 
-        }).then(
-        message => alert("Message Sent Succesfully")
-        );
-    }
+        Email.send({
+    SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert('E-mail was succesfully sent!')
+);
+
+})
+
 </script>
 <footer>
 <div class="social-header2">
