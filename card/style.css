@@ -29,6 +29,7 @@
   overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
+    transition-delay:200ms;
 }
 
 .card-three {
@@ -42,6 +43,8 @@
   font-weight: bold;
   border-radius: 0.5rem;
   overflow: hidden;
+      transition-delay:400ms;
+
 }
 
 .card-content {
