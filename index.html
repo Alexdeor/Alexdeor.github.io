@@ -100,12 +100,12 @@
         <h2 class= "hiddenText">Phone</h2>
         <p class= "hiddenText">(832) 359-8921</p>
     </div>
-        <form class="contact-form" action = '/contactForm.php' method="POST">
+         <form class="contact-form" action = 'http://formspree.io/you@email.com"' method="POST">
         <input type="text" name = "name" placeholder="Your Name" required>
-        <input type="text" name = "mail" placeholder="Email " required>
+        <input type="email" name = "_replyto" placeholder="Email " required>
         <input type="text" name = "subject" placeholder="Subject " required>
-        <textarea id="message" name = "message" rows="4" placeholder = "Message..."></textarea>
-        <button id = "btn"type="submit" name="submit">Send</button>
+        <textarea id="message" name = "body" rows="4" placeholder = "Message..."></textarea>
+        <button id = "btn" type="submit" value="Send" name="submit">Send</button>
     
         </form>
 </div>
