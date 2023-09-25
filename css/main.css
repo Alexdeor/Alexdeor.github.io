@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 * {
   scroll-behavior: smooth;
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
 }
 
 body {
@@ -22,6 +25,12 @@ a {
 
 img {
   width: 100%;
+}
+
+.nav-container {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #674867;
 }
 
 .social-header {
@@ -52,21 +61,7 @@ header ul a {
   display: block;
   padding: 0 1em;
 }
-.hiddenText{
-  opacity: 0;
-  filter: blur(5px);
-  transition: all 1s;
-  transform: translateX(-100%);
-  transition: all 1s;
 
-}
-.showText{
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0);
-
-
-}
 .color-overlay {
   height: 100vh;
   width: 100%;
@@ -119,7 +114,7 @@ header ul a {
   height: 100vh;
   width: 100%;
   color: white;
-  background-image: url("../images/galaxy-3608029_1280.jpg");
+  background-image: url("/images/galaxy-3608029_1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -141,6 +136,20 @@ section {
   font-size: 1.3em;
   margin-top: -0.4em;
   display: block;
+}
+
+.hiddenText {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.showText {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
 }
 
 .about-desc, .project-desc {
@@ -226,6 +235,10 @@ section {
   border-radius: 30px;
 }
 
+textarea {
+  resize: none;
+}
+
 .project-section {
   background-color: rgb(11, 10, 10);
 }
@@ -234,11 +247,12 @@ section {
   border: solid 1px #674867;
   padding: 1em;
 }
- @media(prefers-reduced-motion){
-    .hiddenText{
-      transition: none;
-    }
+
+@media (prefers-reduced-motion) {
+  .hiddenText {
+    transition: none;
   }
+}
 @media only screen and (max-width: 470px) {
   #sectionThree {
     padding: 1em;
@@ -281,6 +295,9 @@ section {
   .nav-container {
     display: grid;
     grid-template-columns: 66% auto;
+  }
+  form {
+    overflow: scroll;
   }
   header {
     padding: 2em 2em 2em 4em;

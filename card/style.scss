@@ -2,18 +2,22 @@
 *::after,
 *::before{
     box-sizing: border-box;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .card{
     width: 100%;
     height: 100% ;
+   
 }
 
 
 
 .card-one{
     color: white;
-    background-image: url(/images/Screenshot\ 2023-03-03\ 193142.png);
+    background-image: url("/images/Screenshot\ 2023-03-03\ 193142.png");
     background-size: cover;
     padding: 10rem 0 0;
     font-weight: bold;
@@ -24,15 +28,12 @@
 }
 .card-two{
     color: white;
-    background-image: url(/images/Screenshot\ 2023-03-04\ 214418.png);
+    background-image: url(/images/Screenshot\ 2023-09-25\ 004633.png);
     background-size: cover;
-    padding: 10rem 0 0;
     font-weight: bold;
     border-radius: 0.5rem;
-    overflow: hidden;
     background-position: center ;
-        transition-delay:200ms;
-
+    transition-delay:200ms;
     background-repeat: no-repeat;
 
 }
@@ -40,7 +41,6 @@
     color: white;
     background-image: url(/images/Screenshot\ 2023-03-05\ 012503.png);
     background-size:cover;
-    width: 100%;
     background-position: center ;
     transition-delay:400ms;
 
@@ -149,9 +149,11 @@
     transform: scaleX(1);
 }
 
-  
+  .transition2{
+    position: relative;
+    z-index: 20;
+  }
     .card-content{
-        transform: translateY(65%);
         transition: transform 500ms ease;
 
     }
@@ -161,7 +163,6 @@
     }
     .card:hover .card-content,
     .card:focus-within .card-content{
-        transform: translateY(0);
         transition-delay: 500ms;
     }
     
@@ -172,7 +173,7 @@
     .card:hover .card-content > *:not(.card-title),
     .card:focus-within .card-content> *:not(.card-title){
         opacity: 1;
-        transition-delay:1000ms ;
+        transition-delay:500ms ;
     }
     .card-title::after{
         transform: scaleX(0);

@@ -2,6 +2,9 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
 }
 
 .card {
@@ -11,7 +14,7 @@
 
 .card-one {
   color: white;
-  background-image: url(/images/Screenshot\ 2023-03-03\ 193142.png);
+  background-image: url("/images/Screenshot 2023-03-03 193142.png");
   background-size: cover;
   padding: 10rem 0 0;
   font-weight: bold;
@@ -21,30 +24,26 @@
 
 .card-two {
   color: white;
-  background-image: url(/images/Screenshot\ 2023-03-04\ 214418.png);
+  background-image: url(/images/Screenshot\ 2023-09-25\ 004633.png);
   background-size: cover;
-  padding: 10rem 0 0;
   font-weight: bold;
   border-radius: 0.5rem;
-  overflow: hidden;
   background-position: center;
+  transition-delay: 200ms;
   background-repeat: no-repeat;
-    transition-delay:200ms;
 }
 
 .card-three {
   color: white;
   background-image: url(/images/Screenshot\ 2023-03-05\ 012503.png);
   background-size: cover;
-  width: 100%;
   background-position: center;
+  transition-delay: 400ms;
   background-repeat: no-repeat;
   padding: 10rem 0 0;
   font-weight: bold;
   border-radius: 0.5rem;
   overflow: hidden;
-      transition-delay:400ms;
-
 }
 
 .card-content {
@@ -130,8 +129,11 @@
   .card:hover .card-title:after {
     transform: scaleX(1);
   }
+  .transition2 {
+    position: relative;
+    z-index: 20;
+  }
   .card-content {
-    transform: translateY(65%);
     transition: transform 500ms ease;
   }
   .card-content > *:not(.card-title) {
@@ -140,7 +142,6 @@
   }
   .card:hover .card-content,
   .card:focus-within .card-content {
-    transform: translateY(0);
     transition-delay: 500ms;
   }
   .card:focus-within .card-content {
@@ -149,7 +150,7 @@
   .card:hover .card-content > *:not(.card-title),
   .card:focus-within .card-content > *:not(.card-title) {
     opacity: 1;
-    transition-delay: 1000ms;
+    transition-delay: 500ms;
   }
   .card-title::after {
     transform: scaleX(0);
