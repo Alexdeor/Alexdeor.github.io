@@ -40,7 +40,6 @@ img{
 
 #sectionThree{
     display: grid;
-    padding:20em 5em 25em  5em;
     align-content: center;
 }
 header{
@@ -197,6 +196,7 @@ font-weight: 500;
 .contact-section{
 display: grid;
 justify-content: center;
+margin: 0;
 height: fit-content;
 background: rgb(11, 10, 10);
 h1{
@@ -213,12 +213,16 @@ h1{
 }
 
 .contact-form{
-    padding-top: 2em;
+    padding: 2em 1em 2em 1em;
     margin-bottom: 5em;
     background: #fff;
     display: flex;
+    width: 400px;
     flex-direction: column;
     border-radius: 10px;
+    input{
+        width: 100%;
+    }
 }
 .contact-form h3{
     color: #555;
