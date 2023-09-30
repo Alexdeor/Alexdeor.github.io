@@ -31,6 +31,10 @@
   background-position: center;
   transition-delay: 200ms;
   background-repeat: no-repeat;
+  padding: 10rem 0 0;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .card-three {
@@ -51,6 +55,9 @@
   height: 100%;
   padding: var(--padding);
   background: linear-gradient(hsla(0, 0%, 0%, 0), hsla(20, 0%, 0%, 0.3) 20%, hsl(0, 0%, 0%));
+}
+.card-content .card-body {
+  text-align: start;
 }
 .card-content .card-title {
   position: relative;
@@ -77,8 +84,7 @@
   border-radius: 0.25em;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
   background-color: white;
 }
 
@@ -122,18 +128,18 @@
     padding: 0.5em 1.25em;
     border-radius: 0.25em;
   }
-  .card:hover,
-  .card:focus-within {
+  .card:hover {
     transform: scale(1.05);
   }
   .card:hover .card-title:after {
     transform: scaleX(1);
   }
-  .transition2 {
-    position: relative;
-    z-index: 20;
-  }
   .card-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .card-content.default-position {
+    transform: translateY(65%);
     transition: transform 500ms ease;
   }
   .card-content > *:not(.card-title) {
@@ -142,6 +148,7 @@
   }
   .card:hover .card-content,
   .card:focus-within .card-content {
+    transform: translateY(0);
     transition-delay: 500ms;
   }
   .card:focus-within .card-content {
@@ -150,7 +157,7 @@
   .card:hover .card-content > *:not(.card-title),
   .card:focus-within .card-content > *:not(.card-title) {
     opacity: 1;
-    transition-delay: 500ms;
+    transition-delay: 1000ms;
   }
   .card-title::after {
     transform: scaleX(0);
