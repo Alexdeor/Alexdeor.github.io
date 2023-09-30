@@ -188,7 +188,8 @@ section {
 .contact-section {
   display: grid;
   justify-content: center;
-  height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
   background: rgb(11, 10, 10);
 }
 .contact-section h1 {
@@ -198,14 +199,13 @@ section {
 
 .section-container {
   display: grid;
-  width: 1000px;
   justify-items: center;
   color: #e2d8d8;
 }
 
 .contact-form {
-  padding: 2em;
-  margin: 1em;
+  padding-top: 2em;
+  margin-bottom: 5em;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -263,9 +263,8 @@ textarea {
     padding: 1em;
   }
   .contact-form {
-    width: 50%;
+    width: 100%;
     padding: 2em;
-    margin: 1em;
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -274,13 +273,16 @@ textarea {
   img {
     width: 50%;
   }
+  .section-container {
+    width: 500px;
+  }
 }
 @media only screen and (min-width: 1181px) {
   img {
     width: 100%;
   }
-  .contact-form {
-    width: 70%;
+  .contact-section {
+    margin-top: 5em;
   }
   .about-section {
     display: grid;
@@ -294,6 +296,7 @@ textarea {
     position: relative;
   }
   .section-container {
+    width: 800px;
     display: flex;
     justify-content: space-around;
     color: #e2d8d8;
