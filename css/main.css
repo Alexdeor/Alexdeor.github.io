@@ -186,6 +186,8 @@ section {
 }
 
 .contact-section {
+  display: grid;
+  justify-content: center;
   height: 100vh;
   background: rgb(11, 10, 10);
 }
@@ -195,15 +197,18 @@ section {
 }
 
 .section-container {
+  display: grid;
+  width: 1000px;
+  justify-items: center;
   color: #e2d8d8;
 }
 
 .contact-form {
+  padding: 2em;
+  margin: 1em;
   background: #fff;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 600px;
   border-radius: 10px;
 }
 
@@ -253,12 +258,30 @@ textarea {
     transition: none;
   }
 }
-@media only screen and (max-width: 470px) {
+@media only screen and (min-width: 600px) {
   #sectionThree {
     padding: 1em;
   }
+  .contact-form {
+    width: 50%;
+    padding: 2em;
+    margin: 1em;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  img {
+    width: 50%;
+  }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1181px) {
+  img {
+    width: 100%;
+  }
+  .contact-form {
+    width: 70%;
+  }
   .about-section {
     display: grid;
     grid-template-columns: 40% auto;
@@ -266,10 +289,6 @@ textarea {
   .about-desc {
     text-align: start;
     padding: 0.5em 0.5em 0.5em 4em;
-  }
-  .contact-form {
-    padding: 2vw 4vw;
-    margin: 1em;
   }
   .social-header {
     position: relative;
